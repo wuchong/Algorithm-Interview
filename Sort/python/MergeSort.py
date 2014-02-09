@@ -19,7 +19,7 @@ def merge_sort(ary):
 def merge(left,right):
     '''合并操作，
     将两个有序数组left[]和right[]合并成一个大的有序数组'''
-    l,r = 0,0
+    l,r = 0,0           #left与right数组的下标指针
     result = []
     while l<len(left) and r<len(right) :
         if left[l] < right[r]:

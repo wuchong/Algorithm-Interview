@@ -11,7 +11,7 @@
 
 def heap_sort(ary) :
     n = len(ary)
-    first = int((n-2)/2)       #最后一个非叶子节点
+    first = int(n/2-1)       #最后一个非叶子节点
     for start in range(first,-1,-1) :     #构造大根堆
         max_heapify(ary,start,n-1)
     for end in range(n-1,0,-1):           #堆排，将大根堆转换成有序数组
